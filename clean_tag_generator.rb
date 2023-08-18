@@ -3,4 +3,4 @@
 
 tag = ARGV[0]
 
-print tag.gsub("refs/heads/", "").gsub("/", "-")
+print tag.gsub("refs/heads/", "").gsub("/", "-")[0..127]
